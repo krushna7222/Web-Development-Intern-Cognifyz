@@ -6,7 +6,7 @@
 /* Header  CSS */
 
 header {
-  color: white;
+  background-color: white;
   height: 60px;
   width: 100vw;
   display: flex;
@@ -14,9 +14,11 @@ header {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
     rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  position: fixed;
+  top: 0px;
 }
 nav {
-  width: 50%;
+  width: 60%;
 }
 #menuitem {
   display: flex;
@@ -37,6 +39,7 @@ li a:hover {
 
 /* Main Section CSS */
 #hero img {
+  margin-top: 65px;
   height: 400px;
   width: 100vw;
   object-fit: cover;
