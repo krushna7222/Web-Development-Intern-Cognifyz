@@ -1,3 +1,8 @@
+:root {
+  --bg-color-dark: #353535;
+  --text-color-dark: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +40,59 @@ nav {
 }
 li a:hover {
   color: rgb(115, 114, 114);
+}
+
+/* Togle button for dark mode */
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+/* Toggle Button Container */
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Checkbox Input */
+.toggle-checkbox {
+  display: none;
+}
+
+/* Label Styling */
+.toggle-label {
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Circle Inside the Toggle */
+.toggle-circle {
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+/* When Checkbox is Checked */
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #000000;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-circle {
+  transform: translateX(30px);
 }
 
 /* Main Section CSS */
@@ -111,7 +169,7 @@ footer > div > ul > li {
     justify-content: space-evenly;
   }
   li a {
-    font-size: 16px;
+    font-size: 14px;
   }
   nav {
     width: 100%;
@@ -122,6 +180,14 @@ footer > div > ul > li {
   #mainsection h2 {
     font-size: 20px;
   }
+  .toggle-label {
+    width: 50px;
+    height: 25px;
+  }
+  .toggle-circle {
+    width: 22px;
+    height: 22px;
+  }
 }
 @media screen and (max-width: 650px) {
   #menuitem {
@@ -130,7 +196,7 @@ footer > div > ul > li {
   }
 
   nav {
-    width: 100%;
+    width: 85%;
   }
   #mainsection h2 {
     font-size: 25px;
