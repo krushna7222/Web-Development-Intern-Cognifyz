@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header  CSS */
+
+header {
+  background-color: white;
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  position: fixed;
+  top: 0px;
+}
+nav {
+  width: 60%;
+}
+#menuitem {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#menuitem > li > a {
+  color: rgb(0, 195, 0);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+li a:hover {
+  color: rgb(115, 114, 114);
+}
+
+/* Main Section CSS */
+#hero img {
+  margin-top: 65px;
+  height: 400px;
+  width: 100vw;
+  object-fit: cover;
+}
+.card {
+  width: 300px;
+  height: auto;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.card > img {
+  height: 400px;
+  width: 100%;
+}
+
+#mainsection h2 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  color: rgb(0, 255, 0);
+  background-color: rgb(199, 47, 123);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  padding: 20px 0px;
+}
+.card > h3 {
+  text-align: center;
+  margin: 10px auto;
+}
+#gallary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#mainsection {
+  width: 100vw;
+  height: auto;
+  padding: 10px 0px;
+}
+
+/*Footer CSS  */
+footer {
+  background-color: rgb(255, 8, 226);
+  color: white;
+  height: auto;
+  display: flex;
+  padding: 20px 0px;
+  justify-content: space-around;
+  align-items: center;
+}
+footer div a {
+  color: white;
+  text-decoration: none;
+}
+footer > div > ul {
+  list-style: none;
+}
+footer > div > ul > li {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 400px) {
+  #menuitem {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  li a {
+    font-size: 16px;
+  }
+  nav {
+    width: 100%;
+  }
+  #hero img {
+    height: 300px;
+  }
+  #mainsection h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #menuitem {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  nav {
+    width: 100%;
+  }
+  #mainsection h2 {
+    font-size: 25px;
+  }
+}
