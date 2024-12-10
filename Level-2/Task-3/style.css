@@ -4,6 +4,7 @@
 }
 
 /* Header  CSS */
+
 header {
   color: white;
   height: 60px;
@@ -102,6 +103,10 @@ footer > div > ul > li {
 }
 
 @media screen and (max-width: 400px) {
+  #menuitem {
+    display: flex;
+    justify-content: space-evenly;
+  }
   li a {
     font-size: 16px;
   }
@@ -116,8 +121,13 @@ footer > div > ul > li {
   }
 }
 @media screen and (max-width: 650px) {
+  #menuitem {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   nav {
-    width: 70%;
+    width: 100%;
   }
   #mainsection h2 {
     font-size: 25px;
